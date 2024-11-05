@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@media (min-width: 481px) and (max-width: 959px) {
+  body {
+    font-size: 16px;
+  }
+    .home-container {
+    padding: 20px;
+  }
+  .home-container h2 {
+    font-size: 4rem;
+  }
+  .about-container {
+    padding: 0 50px;
+  }
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .about-video, .about-photo, .about-text {
+    width: 100%;
+    text-align: center;
+  }
+  .about-text {
+    margin-right: 50px;
+  }
+  .about-photo img{
+    width: 100%;
+    max-width: 300px;
+  }
+  .projectInfo {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .project-image {
+    margin-right: 50px;
+  }
+  .contact-form {
+    width: 90%;
+    max-width: 600px;
+    padding: 25px;
+  }
+}

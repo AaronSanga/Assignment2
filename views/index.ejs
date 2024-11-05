@@ -1,11 +1,12 @@
 <% include ./partials/header.ejs %>
 <% include ./partials/main_nav.ejs %>
-  <main>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    </div>
-  </div>
-  </main>
+  <% if(title == "Home") { %>
+    <% include ./partials/home.ejs %>
+    <% } else if(title == "About") { %>
+      <% include ./partials/about.ejs %>
+    <% } else if(title == "Projects") { %>
+      <% include ./partials/projects.ejs %>
+    <% } else if(title == "Contact Us") { %>
+      <% include ./partials/contact.ejs %>
+    <% } %>
 <% include ./partials/footer.ejs %>

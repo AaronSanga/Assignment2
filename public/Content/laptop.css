@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media (min-width: 960px) {
+    body {
+        font-size: 18px;
+    }
+  .home-container {
+      padding: 30px;
+  }
+  .home-container h2 {
+      font-size: 5rem;
+  }
+  .about-content {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 100px;
+  }
+  .projectInfo {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+  }
+  .contact-form {
+      max-width: 600px;
+      padding: 30px;
+  }
+}
